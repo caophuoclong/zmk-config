@@ -14,8 +14,6 @@
 #define LOWER 1
 #define RAISE 2
 #define ADJUST 3
-#define RGBLED_NUM 72
-#define RGBLED_SPLIT {36,36}
 
 / {
 
