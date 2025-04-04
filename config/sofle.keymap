@@ -13,7 +13,6 @@
 
 #include <dt-bindings/led/led.h>
 
-#include <dt-bindings/led/led.h>
 
 &pinctrl {
     spi3_default: spi3_default {
@@ -68,7 +67,11 @@
 #define LOWER 1
 #define RAISE 2
 #define ADJUST 3
-
+/ {
+	chosen {
+		zmk,underglow = &led_strip;
+	};
+};
 / {
 
    // Activate ADJUST layer by pressing raise and lower
