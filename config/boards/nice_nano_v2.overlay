@@ -36,6 +36,6 @@
 
 / {
     chosen {
-        zmk,backlight = &led_strip;  // Add the backlight chosen node
+        zmk,underglow = &led_strip;
     };
 };
