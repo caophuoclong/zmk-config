@@ -90,17 +90,17 @@
         adjust_layer {
 // ----------------------------------------------------------------------------------------------------------------------------
 // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
-// | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  | RGB_TOG | RGB_EFF | RGB_SPI | RGB_HUI | RGB_SAI | RGB_BRI |
-// |        | RGB_BRD | RGB_BRI |         |         |         |                  | RGB_M_P | RGB_M_B | RGB_M_R | RGB_M_SW | RGB_M_T | RGB_M_K |
-// |        |         |         |         |         |         | RGB_TOG | |      |         |         |RGB_SPD  | RGB_HUD | RGB_SAD | RGB_BRD |
-//                    |         |         |         |         |         | |      |         |         |         |         |
+// | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
+// |        | RGB_BRD | RGB_BRI |         |         |         |                  |      |      |       |      |       |       |
+// |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
+//                    |         |         |         |         |         | |      |      |      |       |      |
             display-name = "adjust";
             bindings = <
-&bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &rgb_ug RGB_TOG &rgb_ug RGB_EFF &rgb_ug RGB_SPI &rgb_ug RGB_HUI &rgb_ug RGB_SAI &rgb_ug RGB_BRI
-&ext_power EP_TOG &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                         &rgb_ug RGB_M_P &rgb_ug RGB_M_B &rgb_ug RGB_M_R &rgb_ug RGB_M_SW &rgb_ug RGB_M_T &rgb_ug RGB_M_K
-&none             &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &none                                     &none           &none           &rgb_ug RGB_SPD &rgb_ug RGB_HUD &rgb_ug RGB_SAD &rgb_ug RGB_BRD
-&none             &none           &none           &none           &none           &none            &rgb_ug RGB_TOG &none     &none           &none           &none           &none           &none           &none
-                                  &none           &none           &none           &none            &none           &none     &none           &none           &none           &none
+&bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &none &none &none &none &none &none
+&ext_power EP_TOG &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                         &none &none &none &none &none &none
+&none             &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &none                                   &none &none &none &none &none &none
+&none             &none           &none           &none           &none           &none            &rgb_ug RGB_TOG &none  &none &none &none &none &none &none
+                                  &none           &none           &none           &none            &none           &none  &none &none &none &none
             >;
         };
 
