@@ -15,7 +15,8 @@
 #define LOWER 1
 #define RAISE 2
 #define ADJUST 3
-
+/ {
+    behaviors {
 cc: cc {
             compatible = "zmk,behavior-tap-dance";
             label = "COLOR_CYCLE";
@@ -29,7 +30,7 @@ cc: cc {
             , <&rgb_ug RGB_COLOR_HSB(285,100,20)>
             ;
         };
-/ {
+    };
 
    // Activate ADJUST layer by pressing raise and lower
     conditional_layers {
