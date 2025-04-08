@@ -30,3 +30,8 @@
         };
     };
 };
+/ {
+    chosen {
+        zmk,backlight = &backlight;
+    };
+};
